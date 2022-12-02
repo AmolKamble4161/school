@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Koulen&family=Oleo+Script+Swash+Caps&display=swap');
+*{
+    font-family: 'Barlow', sans-serif;
+}
+.navbar-brand img{
+    height: 50px;
+    width: 50px;
+}
+.navbar-brand .name{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 22px;
+}
+.navbar{
+    background: linear-gradient(270deg, rgba(0, 47, 73, 0.94) 27.47%, rgba(0, 93, 146, 0) 82.08%);
+}
+
+/* main page */
+.main-page{
+    background-image: linear-gradient(90deg, rgba(0, 47, 73, 0.75) 0%, rgba(0, 0, 0, 0.015625) 78.39%, rgba(0, 0, 0, 0) 78.4%, rgba(255, 255, 255, 0) 78.4%), 
+                      url(Images/pensive-haired-latin-girl-sitting-school-desk-drawing-her-copybook.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.main-page .text{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    color: #FFFFFF;
+}
+.main-page h1{
+    font-family: 'Koulen', cursive;
+    font-size: 72px    
+}
+.main-page p{
+    font-size: 20px;
+}
+@media only screen and (max-width:567px) {
+    .main-page h1{
+        font-size: 52px    
+    }
+}
+.text input[type=button]{
+    background-color: #002F49;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.text input[type=button]:hover{
+    background-color: #fff;
+    color: #002F49;    
+}
+
+
+/* why choose us */
+.status h2{
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+}
+.status .item p{
+    margin: 0;
+    font-weight: bold;
+}
+.status .item i{
+   font-size: 30px;
+}
+.status .item .number{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.status .item .no1::after{
+    content: "%";
+}
+.status .item .info{
+    font-size: 22px;
+}
+.status .item .dis-no{
+    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 75%);
+    border-radius: 10px;
+    background: linear-gradient(to right,#0d496d 0%,#6dd5ed 50%,#482fb3 100%);
+    background-size: 500%;
+}
+.status .item .dis-no:hover{
+    animation-name: gradient;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: scale(1.02);
+    transition: 0.5s ease;
+}
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    
+  100%{
+    background-position: 100% ;
+  }    
+}
+  
+
+/* about section */
+.about{
+    background: #F6F6F6;
+}
+.about .blob img{
+    -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHZpZXdCb3g9IjAgMCAyMDAgMjAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiNGRjAwNjYiIGQ9Ik0zOC45LC03MC43QzQ5LjksLTYxLjEsNTcuOCwtNDkuNiw2NC4yLC0zNy40QzcwLjUsLTI1LjMsNzUuMywtMTIuNyw3OC43LDJDODIsMTYuNiw4NC4xLDMzLjIsNzYuMyw0Mi44QzY4LjUsNTIuNCw1MC45LDU1LDM2LjYsNjIuNEMyMi4yLDY5LjgsMTEuMSw4MiwtMi4zLDg2Qy0xNS43LDkwLC0zMS41LDg1LjksLTQyLDc2LjNDLTUyLjUsNjYuNiwtNTcuOCw1MS41LC02MC43LDM3LjlDLTYzLjUsMjQuMywtNjMuOSwxMi4yLC02Ny4zLC0yQy03MC43LC0xNi4xLC03Ny4yLC0zMi4yLC03MywtNDMuNkMtNjguOSwtNTQuOSwtNTQuMSwtNjEuNiwtNDAuMiwtNjkuNEMtMjYuMywtNzcuMywtMTMuMSwtODYuMywwLjQsLTg3LjFDMTQsLTg3LjgsMjgsLTgwLjMsMzguOSwtNzAuN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCAxMDApIiAvPgo8L3N2Zz4K);
+    height: 100%;
+    width: 100%;
+}
+.about-info h2{
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.about-info p{
+    font-size: 17px;
+}
+.about-info input[type=button]{
+    background-color: #002F49;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+.about-info input[type=button]:hover{
+    background-color: #fff;
+    color: #002F49;    
+}
+
+/* staff */
+.staff h2{
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.staff .card img{
+    height: 300px;
+    width: 300px;
+}
+
+/* brand */
+.brand{
+    background: linear-gradient(270deg, #002F49, rgba(0, 47, 73, 0.43));
+    padding: 15px 0px;
+}
+.brand h2{
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+.brand input[type=button]{
+    background-color: #FFFFFF;
+    color: #002F49;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.brand input[type=button]:hover{
+    background-color: #002F49;
+    color: #FFFFFF;    
+}
+
+/* Media section */
+.media{
+    background-color: #F6F6F6;
+}
+.media-text h2{
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+}
+.media-text p{
+    font-size: 17px;
+}
+.media input[type=button]{
+    background-color: #002F49;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.media input[type=button]:hover{
+    background-color: #FFFFFf;
+    color: #002F49;    
+}
+
+.media .grid{
+    display: grid;
+    grid-template-columns: 500px 300px;
+    grid-template-rows: 160px 160px 250px;
+    gap: 10px;
+}
+.media .item-1{
+    background: url(Images/media-3.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-row: 1/3;
+}
+.media .grid-items{
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+}
+.media .item-2{
+    background: url(Images/media-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.media .item-3{
+    background: url(Images/media-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.media .item-4{
+    background: url(Images/media-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.media .item-5{
+    background: url(Images/media-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width:992px) {
+    .media .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 200px);
+        gap: 5px;
+    }
+    .media .item-1{
+        grid-row: 1/2;
+    }
+
+}
+
+/* offer section */
+.offer{
+    padding: 50px 0px;
+}
+.offer h2{
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+}
+.offer p{
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+.offer .card-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+.card-section .cards h4{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0px;
+}
+@media only screen and (max-width: 992px){
+    .offer p{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .offer p{
+        width: 100%;
+    }
+    .offer .card-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 567px){
+    .offer p{
+        width: 100%;
+    }
+    .offer .card-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Testimonials */
+.testimonials{
+    padding: 50px 0px;
+    background: #F6F6F6;
+    position: relative;
+}
+.testimonials h2{
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.testimonials .container{
+    position: relative;
+}
+.testimonials .btns{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+.testimonials .btns .right{
+    margin-right: 24px;
+}
+.btns i{
+    padding: 9px 10px;
+    background-color: #fff;
+    border: 1px solid #002F49;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.btns i:hover{
+    background-color: rgba(0, 93, 146, 0.5);
+    color: #FFFFFF;
+}
+.frames img{
+    height: 60px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.testimonials .test{
+    display: flex;
+    justify-content: space-evenly;
+}
+.test .date{
+    color: rgb(76, 75, 75);
+}
+.testimonials .frames{
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 4px solid rgba(0, 93, 146, 0.5);
+    border-radius: 13px;
+    width: 45%;
+}
+.testimonials .frames .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.comment p{
+    text-align: center;
+    font-size: 17px;
+}
+.who{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.who h5{
+    font-size: 20px;
+    margin: 0px;
+    font-weight: bold;
+}
+.who p{
+    margin: 0px;
+}
+@media only screen and (max-width:992px) {
+    .testimonials .test{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials .frames{
+        margin: 10px 0px;
+    }
+}
+
+/* footer */
+footer{
+    padding: 30px 0px;
+    background: #002F49;
+    color: #FFFFFF;
+    position: relative;
+}
+footer .title img{
+    height: 70px;
+}
+footer .title>div, footer .contact span, footer .address div{
+    display: flex;
+    align-items: center;
+}
+footer .title>div h2{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 22px;
+    margin: 0px;
+}
+footer .contact span p, footer .address div p{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.contact h2, .address h2, .newsletter h2{
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    margin-bottom: 0px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.newsletter input[type=email]{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.newsletter input[type=button]{
+    background-color: #002F49;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.newsletter input[type=button]:hover{
+    background-color: #FFFFFF;
+    color: #002F49;    
+}
+
+/* footer icons */
+footer .social{
+    position: absolute;
+    bottom: 60px;
+    left: 540px;
+    display: flex;
+    align-items: center;
+}
+footer .social h6{
+    margin: 0;
+    font-weight: bold;
+    margin-right: 10px;
+}
+footer .social i{
+    font-size: 30px;
+    margin: 0px 5px;
+    transition: 0.5s;
+}
+footer .social i:hover{
+    color: #3e9fd3;
+}
+@media only screen and (max-width:1100px) {
+    footer .social{
+        left: 400px;        
+    }
+}
+@media only screen and (max-width: 992px) {
+    footer .social{
+        left: 150px;        
+    }
+}
+@media only screen and (max-width: 767px) {
+    footer .social{
+        position: relative;
+        display: flex;
+        align-items: center;
+        bottom: 0px;
+        left: auto;
+    }
+}
+  
+
+  
+
+
